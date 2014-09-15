@@ -11,16 +11,12 @@ define({
 	// Default desired capabilities for all environments. Individual capabilities can be overridden by any of the
 	// specified browser environments in the `environments` array below as well. See
 	// https://code.google.com/p/selenium/wiki/DesiredCapabilities for standard Selenium capabilities and
-	// https://saucelabs.com/docs/additional-config#desired-capabilities for Sauce Labs capabilities.
 	// Note that the `build` capability will be filled in with the current commit ID from the Travis CI environment
 	// automatically
 	capabilities: {
 		'selenium-version': '2.39.0'
 	},
 
-	// Browsers to run integration testing against. Note that version numbers must be strings if used with Sauce
-	// OnDemand. Options that will be permutated are browserName, version, platform, and platformVersion; any other
-	// capabilities options specified for an environment will be copied as-is
 	environments: [
 		{ browserName: 'internet explorer', version: '11', platform: 'Windows' },
 		{ browserName: 'internet explorer', version: '10', platform: 'Windows' },
@@ -40,13 +36,6 @@ define({
 	    accessKey: "<key>",
 	    port: "80"
   },
-
-	// Whether or not to start Sauce Connect before running tests
-	// useSauceConnect: true,
-
-	// Connection information for the remote WebDriver service. If using Sauce Labs, keep your username and password
-	// in the SAUCE_USERNAME and SAUCE_ACCESS_KEY environment variables unless you are sure you will NEVER be
-	// publishing this configuration file somewhere
 
 	// The desired AMD loader to use when running unit tests (client.html/client.js). Omit to use the default Dojo
 	// loader
