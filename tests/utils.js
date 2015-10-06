@@ -10,8 +10,7 @@ define([
       return this.remote
         .get(require.toUrl('http://www.google.com'))
         .findByName("q")
-          .pressKeys("BrowerStack")
-          .submit()
+          .type("BrowerStack\n")
           .end()
         .sleep(5000)
         .takeScreenshot();
