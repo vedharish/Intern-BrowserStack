@@ -8,9 +8,9 @@ define([
 
     'google search': function () {
       return this.remote
-        .get(require.toUrl('http://www.google.com'))
+        .get(require.toUrl('https://www.google.com'))
         .findByName("q")
-          .type("BrowerStack\n")
+          .type("BrowserStack\n")
           .end()
         .sleep(5000)
         .takeScreenshot();

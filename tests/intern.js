@@ -8,6 +8,8 @@ define({
     'browserstack.selenium-version': '2.45.0'
   },
 
+  defaultTimeout: 300000,
+
   environments: [
     { browser: 'Opera', browser_version: '12.16', os: 'Windows', os_version: '8.1' },
     { browser: 'Firefox', browser_version: '40.0', os: 'Windows', os_version: 'XP' },
@@ -37,5 +39,5 @@ define({
 
   functionalSuites: [ 'tests/utils' ],
 
-  excludeInstrumentation: /^(tests|node_modules)\//
+  excludeInstrumentation: true
 });
