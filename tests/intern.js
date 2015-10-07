@@ -25,8 +25,8 @@ define({
 
   tunnelOptions: {
     verbose: true,
-    username: "<BrowserStack-username>",
-    accessKey: "<BrowserStack-accessKey>"
+    username: process.env.BROWSERSTACK_USERNAME,
+    accessKey: process.env.BROWSERSTACK_KEY
   },
 
   reporters: [ 'Console' ],
