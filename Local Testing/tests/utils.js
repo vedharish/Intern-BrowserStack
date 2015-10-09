@@ -14,6 +14,7 @@ define([
           .type('Stack')
           .end()
         .findByCssSelector('h1')
+          .click()
           .getVisibleText()
           .then(function(text) {
             assert.strictEqual(text, 'BrowserStack');
