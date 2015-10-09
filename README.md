@@ -6,7 +6,7 @@ Node and npm
 
 ### Clone this repo
 
-`git clone https://github.com/vedharish/intern-browserstack.git`
+`git clone https://github.com/browserstack/intern-browserstack.git`
 
 `cd intern-browserstack`
 
