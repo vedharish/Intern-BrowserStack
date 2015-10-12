@@ -1,9 +1,8 @@
 define({
   proxyPort: 9000,
 
-  proxyUrl: 'http://localhost:9000/',
-
   capabilities: {
+    name: 'Sample Intern Local-Testing',
     build: 'build',
     'browserstack.selenium-version': '2.45.0',
     'browserstack.local': true
@@ -22,7 +21,6 @@ define({
   maxConcurrency: 2,
 
   tunnel: 'BrowserStackTunnel',
-  //tunnel: 'NullTunnel',
 
   tunnelOptions: {
     verbose: true,

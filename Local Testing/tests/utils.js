@@ -8,7 +8,7 @@ define([
 
     'local test': function () {
       return this.remote
-        .get(require.toUrl('http://127.0.0.1:8000/index.html'))
+        .get(require.toUrl('app/index.html'))
         .findByCssSelector("input")
           .click()
           .type('Stack')
