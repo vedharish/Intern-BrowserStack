@@ -1,9 +1,8 @@
 define({
   proxyPort: 9000,
 
-  proxyUrl: 'http://localhost:9000/',
-
   capabilities: {
+    name: 'Sample Intern Live-Testing',
     build: 'build',
     'browserstack.selenium-version': '2.45.0'
   },

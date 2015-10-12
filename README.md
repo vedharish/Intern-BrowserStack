@@ -8,11 +8,7 @@ Node and npm
 
 `git clone https://github.com/browserstack/intern-browserstack.git`
 
-`cd intern-browserstack`
-
-### Install intern
-
-`npm install intern --save-dev`
+`cd intern-browserstack/`
 
 ### BrowserSack Authentication
 
@@ -25,4 +21,12 @@ These can be found on the automate accounts page on [BrowserStack](https://www.b
 
 ### Run tests
 
-`./node_modules/.bin/intern-runner config=tests/intern`
+cd to `Local Testing` or `Live Testing` directories for local and live testing respectively.
+
+Install the dependencies using -
+
+`npm install`
+
+Then tests can be run via the command -
+
+`npm test`
