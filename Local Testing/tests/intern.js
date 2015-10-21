@@ -5,7 +5,8 @@ define({
     name: 'Sample Intern Local-Testing',
     build: 'build',
     'browserstack.selenium-version': '2.45.0',
-    'browserstack.local': true
+    'browserstack.local': true,
+    fixSessionCapabilities: false
   },
 
   defaultTimeout: 300000,

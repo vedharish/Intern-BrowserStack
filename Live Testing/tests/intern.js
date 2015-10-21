@@ -4,7 +4,9 @@ define({
   capabilities: {
     name: 'Sample Intern Live-Testing',
     build: 'build',
-    'browserstack.selenium-version': '2.45.0'
+    'browserstack.selenium-version': '2.45.0',
+    'browserstack.local': false,
+    fixSessionCapabilities: false
   },
 
   defaultTimeout: 300000,
