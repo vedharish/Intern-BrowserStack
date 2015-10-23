@@ -4,23 +4,23 @@ define({
   capabilities: {
     name: 'Sample Intern Live-Testing',
     build: 'build',
-    'browserstack.selenium-version': '2.45.0'
+    'browserstack.selenium-version': '2.45.0',
+    'browserstack.local': false,
+    fixSessionCapabilities: false
   },
 
   defaultTimeout: 300000,
 
   environments: [
-    { browser: 'Opera', browser_version: '12.16', os: 'Windows', os_version: '8.1' },
-    { browser: 'Firefox', browser_version: '40.0', os: 'Windows', os_version: 'XP' },
-    { browser: 'IE', browser_version: '8.0', os: 'Windows', os_version: '7' },
     { browser: 'Chrome', browser_version: '44.0', os: 'OS X', os_version: 'Yosemite' },
-    { browserName: 'android', platform: 'ANDROID', device: 'Samsung Galaxy S5' }
+    { browser: 'Firefox', browser_version: '40.0', os: 'Windows', os_version: 'XP' },
+    { browser: 'Opera', browser_version: '12.16', os: 'Windows', os_version: '8.1' },
+    { browser: 'IE', browser_version: '8.0', os: 'Windows', os_version: '7' }
   ],
 
   maxConcurrency: 2,
 
   tunnel: 'BrowserStackTunnel',
-  //tunnel: 'NullTunnel',
 
   tunnelOptions: {
     verbose: true,
@@ -28,7 +28,7 @@ define({
     accessKey: process.env.BROWSERSTACK_KEY
   },
 
-  reporters: [ 'Console' ],
+  reporters: [ 'Pretty' ],
 
   loaderOptions: {
     packages: null

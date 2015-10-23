@@ -8,8 +8,6 @@ Node and npm
 
 `git clone https://github.com/browserstack/intern-browserstack.git`
 
-`cd intern-browserstack/`
-
 ### BrowserSack Authentication
 
 Export the environment variables for the username and access key of your BrowserStack account.

@@ -11,7 +11,7 @@ define([
         .get(require.toUrl('app/index.html'))
         .findByCssSelector("input")
           .click()
-          .type('Stack')
+          .type('BrowserStack')
           .end()
         .findByCssSelector('h1')
           .click()
